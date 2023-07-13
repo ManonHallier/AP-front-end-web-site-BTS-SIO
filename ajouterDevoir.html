@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="site web sur le bts SIO">
+    <meta name="keywords" content="html,css,javascript , js, developpement web">
+    <meta name="viewport" content="width=device-width, iniyial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Christina GAPY Manon HALLIER">
+    <meta name="robots" content="noindex,notranslate" />
+    <script type="text/javascript" src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/mon_style.css">
+    <title>Gérer les devoirs</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#">Devoirs</a>
+                <ul>
+                    <li><a href="ajouterDevoir.html">Gérer les devoirs</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Bloc de compétences</a>
+                <ul>
+                    <li><a href="troncCommun.html">Tronc Commun</a>
+                    </li>
+                    <li><a href="slam.html">Option SLAM</a>
+                    </li>
+                    <li><a href="sisr.html">Option SISR</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#"> A propos</a>
+                <ul>
+                    <li><a href="apropos.html">A propos Webietch</a>
+                    </li>
+                    <li><a href="contact.html"> Contactez-nous</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>Ajouter votre devoir</h2>
+            <form method="post" id="formDevoirId" name="formDevoir" class="box" onsubmit="return false">
+                <label for="devoir"><strong>Nom de l'activité devoir</strong>
+                </label>
+                <input type="text" id="devoir" name="devoir">
+                <label for="date"><strong>Date :</strong>
+                </label>
+                <input type="date" id="date" name="date" value="2022-04-01" min="2022-04-01" max="2024-04-30">
+                <label for="bloc"><strong>Bloc:</strong>
+                </label>
+                <select name="bloc">
+                    <option>Bloc d'activités professionnelles</option>
+                    <option>Bloc n°1 Services informatiques</option>
+                    <option>Bloc n°2 Option SLAM</option>
+                    <option>Bloc n°2 Option SISR</option>
+                    <option>Bloc n°3 Option SLAM</option>
+                    <option>Bloc n°3 Option SISR</option>
+                    <option>Bloc n°4 Culture générale</options>
+                        <option>Bloc n°5 Anglais</option>
+                        <option>Bloc n°6 Mathématiques</option>
+                        <option>Bloc n°7 Economie et Management</option>
+                        <option>Bloc facultatif</option>
+
+                </select>
+                <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
+                <button type="button" id="supprimerBtn" class="btn" onclick="supprimer()">Supprimer</button>
+
+
+            </form>
+            <table class="datatable" id="datatable">
+                <thead>
+                    <tr>
+                        <th>Devoir</th>
+                        <th>Date</th>
+                        <th>Bloc</th>
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+                </tbody>
+            </table>
+
+        </article>
+    </section>
+    <footer>
+        <a href="contact.html">Besoin d'aide ! Contactez-nous</a>
+    </footer>
+</body>
+
+</html>

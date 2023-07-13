@@ -1,0 +1,215 @@
+body{
+  background-color: rgba(255, 255, 255, 0.668);
+  border: 2px solid black;
+  width: auto;
+  margin: 2px;
+}
+h1{
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:orange;
+}
+header {
+  width: auto;
+  height: 200px;
+  background-image: url(../img/btssio.PNG);
+  box-shadow:10px 5px 5px rgb(159, 184, 218);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #AED6F1;
+  border: 2px solid rgb(73, 206, 193);
+}
+footer{
+  background-color: #AED6F1;
+  border: 2px solid rgb(73, 206, 193);
+  border-radius: 30px;
+  height: 50px;
+}
+article li{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+article p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+footer a{
+  display: block;
+  text-align:center;
+  font-size: larger;
+}
+article{
+  width:auto;
+  height: auto;
+  border-radius: 30px;
+  border: 2px solid rgb(73, 206, 193);
+  background-color: #AED6F1;
+}
+p{
+  text-align: center;
+}
+h3{
+  color: rgb(159, 74, 74);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+article li{
+  list-style: none;
+}
+h2{
+  color: rgb(159, 74, 74);
+}
+nav{
+  text-align:center;
+}
+button{
+  background-color: rgba(174, 149, 202, 0.918);
+  font-size: larger;
+}
+label{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(159, 74, 74);
+  font-size: 26px;
+}
+input{
+  border:1px solid black;
+  width: 150px;
+  height:20px;
+}
+th{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(159, 74, 74);
+  font-size: 26px;
+  width: calc(100% / 3);
+  margin-right: 10px;
+}
+table {
+  width: 100%;
+}
+.tablebody tr{
+  border-bottom: 1px solid black;
+}
+td{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  width: calc(100% / 3);
+  text-align: center;
+}
+form{
+  border: 2px solid black;
+}
+.datatable {
+  width: 100%;
+  overflow-x: auto;
+}
+#menu {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+#menu li ul li{
+  height:10px;
+}
+#menu li {
+  display: inline-block;
+  position: relative;
+  text-align:left;
+}
+#menu li a {
+  display: block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
+#menu li:first-child a {
+  background-color: #F5B7B1;
+}
+#menu li:first-child ul li a {
+  background-color: grey;
+  margin-top: 0;
+}
+#menu li:first-child ul li a:hover {
+  background-color: #F5B7B1;
+  margin-top: 0;
+}
+#menu li:nth-child(2) a {
+  background-color: rgb(83, 116, 191);
+}
+#menu li:nth-child(2) ul li a {
+  background-color: grey;
+  margin-top: 0;
+}
+#menu li:nth-child(2) ul li a:hover {
+  background-color:rgb(83, 116, 191);
+  margin-top: 0;
+}
+#menu li:last-child a {
+  background-color: #EBDEF0;
+}
+#menu li:last-child ul li a {
+  background-color: grey;
+}
+#menu li:last-child ul li a:hover{
+  background-color: #EBDEF0;
+  margin-top: 0;
+}
+#menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  width: fit-content;
+}
+#menu ul li {
+  float: none;
+}
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #eee;
+}
+#menu ul li:hover > a {
+  background-color: white;
+}
+#menu li:hover > ul {
+  display: block;
+}
+#menu li {
+  float: left;
+  position: relative;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+#menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius:10px;
+}
+@media screen and (max-width: 700px) {
+  nav {
+      justify-content: center;
+      font-size: smaller;
+  }
+  nav ul {
+      display: flex;
+  }
+  header{
+      margin-top: 10%;
+      max-width: 100%;
+  }
+  h1{
+      font-size: 1.5em;
+  }
+  section{
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 100%;
+  }
+}
